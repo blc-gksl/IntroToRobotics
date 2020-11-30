@@ -1,0 +1,2 @@
+my_pr_robot
+-DCATKIN_DEVEL_PREFIX=/home/goksel/GitHub/IntroToRobotics/myrobotws/devel -DCMAKE_INSTALL_PREFIX=/home/goksel/GitHub/IntroToRobotics/myrobotws/install -G Unix Makefiles

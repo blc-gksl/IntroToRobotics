@@ -1,0 +1,8 @@
+prefix=/home/goksel/GitHub/IntroToRobotics/myrobotws/devel
+
+Name: my_pr_robot
+Description: Description of my_pr_robot
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 
