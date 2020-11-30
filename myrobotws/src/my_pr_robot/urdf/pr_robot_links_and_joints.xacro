@@ -8,13 +8,19 @@
             <cylinder radius = "1.5" length  = "5" />
         </geometry>
     </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 2.5" />
+      <geometry>
+        <cylinder radius = "1.5" length  = "5" />
+      </geometry>
+    </collision>
     </link>
 
-    <joint name = "joint1" type = "prismatic">
+    <joint name = "joint1_base_link_to_link1" type = "prismatic">
         <parent link = "base_link"/>
         <child link = "link1"/>
-            <axis xyz = "0 0 1"/>
-            <origin rpy = "0 0 0" xyz = "0 0 1" />
+        <axis xyz = "0 0 1"/>
+        <origin rpy = "0 0 0" xyz = "0 0 1" />
         <limit effort = "1000.0" lower = "0" upper = "4" velocity="0.5"/>
     </joint>
 
@@ -22,16 +28,25 @@
     <visual>
         <origin rpy = "0 0 0" xyz = "0 0 2.5" />
         <geometry>
-            <cylinder radius = "1" length  = "5" />
+          <cylinder radius = "1" length  = "5" />
         </geometry>
+	<material name="green">
+    	  <color rgba="0.0 1.0 0.0 1.0"/>
+        </material>
     </visual>
+    <collision>
+      <origin rpy = "0 0 0" xyz = "0 0 2.5" />
+      <geometry>
+        <cylinder radius = "1" length  = "5" />
+      </geometry>
+    </collision>
     </link>
 
-    <joint name = "joint2" type = "revolute">
+    <joint name = "joint2_link1_to_link2" type = "revolute">
         <parent link = "link1"/>
         <child link = "link2"/>
-            <axis xyz = "0 0 1"/>
-            <origin rpy = "0 0 0" xyz = "0 0 0" />
+        <axis xyz = "0 0 1"/>
+        <origin rpy = "0 0 0" xyz = "0 0 0" />
         <limit effort = "1000.0" lower = "-3.14" upper = "3.14" velocity="1"/>
     </joint>
 
@@ -42,5 +57,35 @@
             <box size = "5 1 1"/>
         </geometry>
     </visual>
+    <collision>
+      <origin rpy = "0 0 0" xyz = "2.5 0 5.5" />
+      <geometry>
+        <box size = "5 1 1"/>
+      </geometry>
+    </collision>
     </link>
+
+    <joint name="joint3_link2_to_hand" type="fixed">
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <parent link="link2"/>
+      <child link="hand"/>
+    </joint>
+
+    <link name="hand">
+    <visual>
+      <origin rpy="0 0 0" xyz="5.5 0 5.5" />
+      <geometry>
+        <box size="1 1 1" />
+      </geometry>
+      <material name="green">
+    	<color rgba="0.0 1.0 0.0 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="5.5 0 5.5" />
+      <geometry>
+        <box size="1 1 1" />
+      </geometry>
+    </collision>
+</link>
   </robot>
