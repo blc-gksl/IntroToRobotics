@@ -1,0 +1,8 @@
+prefix=/home/goksel/GitHub/IntroToRobotics/myrobotws/install
+
+Name: moverobot
+Description: Description of moverobot
+Version: 0.3.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: roscpp

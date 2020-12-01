@@ -1,0 +1,44 @@
+<?xml version="1.0" ?>
+<robot name = "pr_robot" xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+  <!-- BGN - Include -->
+  <xacro:include filename="$(find robot_description)/urdf/links_joints.xacro"/>
+  <!-- END - Include -->
+
+    <my_box_link_red name = "base_link"
+                      origin_rpy = "0 0 0" origin_xyz = "0 0 2.5"
+                      size = "0.7 0.7 5"/>
+    
+    <my_joint name = "joint1_base_link_to_link1"
+              type = "prismatic"
+              origin_rpy = "0 0 0" origin_xyz = "0 0 1"
+              parent = "base_link" child = "link1"
+              axis_xyz = "0 0 1"
+              limit_e = "1000" limit_l = "0" limit_u = "4.0" limit_v = "0.5"/>
+
+    <my_cylinder_link_green name = "link1"
+                      origin_rpy = "0 0 0" origin_xyz = "0 0 2.5"
+                      radius = "0.35" length = "5"/>
+
+    <my_joint name = "joint2_link1_to_link2"
+              type = "revolute"
+              origin_rpy = "0 0 0" origin_xyz = "0 0 0"
+              parent = "link1" child = "link2"
+              axis_xyz = "0 0 1"
+              limit_e = "1000" limit_l = "-3.14" limit_u = "3.14" limit_v = "1.0"/>
+
+    <my_box_link_red name = "link2"
+                 origin_rpy = "0 0 0" origin_xyz = "2 0 5.35"
+                 size = "4 0.7 0.7"/>
+
+    <my_joint name = "joint3_link2_to_hand"
+              type = "fixed"
+              origin_rpy = "0 0 0" origin_xyz = "0 0 0"
+              parent = "link2" child = "hand"
+              axis_xyz = "0 0 0"
+              limit_e = "0" limit_l = "0" limit_u = "0" limit_v = "0"/>
+
+    <my_box_link_green name = "hand"
+                 origin_rpy = "0 0 0" origin_xyz = "4.5 0 5.35"
+                 size = "1 0.7 0.7"/>
+</robot>

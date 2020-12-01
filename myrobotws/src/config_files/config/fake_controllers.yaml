@@ -1,5 +1,5 @@
 controller_list:
-  - name: fake_therobot_controller
+  - name: fake_pr_robot_controller
     joints:
       - joint1_base_link_to_link1
       - joint2_link1_to_link2
@@ -7,5 +7,5 @@ controller_list:
     joints:
       []
 initial:  # Define initial robot poses.
-  - group: therobot
+  - group: pr_robot
     pose: naturalpose

@@ -284,6 +284,12 @@ _gtest_INCLUDES:FILEPATH=/usr/include/gtest/gtest.h
 //Path to a file.
 _gtest_SOURCES:FILEPATH=/usr/src/gtest/src/gtest.cc
 
+//The directory containing a CMake configuration file for actionlib.
+actionlib_DIR:PATH=/opt/ros/melodic/share/actionlib/cmake
+
+//The directory containing a CMake configuration file for actionlib_msgs.
+actionlib_msgs_DIR:PATH=/opt/ros/melodic/share/actionlib_msgs/cmake
+
 //The directory containing a CMake configuration file for catkin.
 catkin_DIR:PATH=/opt/ros/melodic/share/catkin/cmake
 
@@ -298,6 +304,39 @@ config_files_SOURCE_DIR:STATIC=/home/goksel/GitHub/IntroToRobotics/myrobotws/src
 
 //The directory containing a CMake configuration file for cpp_common.
 cpp_common_DIR:PATH=/opt/ros/melodic/share/cpp_common/cmake
+
+//The directory containing a CMake configuration file for dynamic_reconfigure.
+dynamic_reconfigure_DIR:PATH=/opt/ros/melodic/share/dynamic_reconfigure/cmake
+
+//The directory containing a CMake configuration file for eigen_conversions.
+eigen_conversions_DIR:PATH=/opt/ros/melodic/share/eigen_conversions/cmake
+
+//The directory containing a CMake configuration file for eigen_stl_containers.
+eigen_stl_containers_DIR:PATH=/opt/ros/melodic/share/eigen_stl_containers/cmake
+
+//The directory containing a CMake configuration file for gencpp.
+gencpp_DIR:PATH=/opt/ros/melodic/share/gencpp/cmake
+
+//The directory containing a CMake configuration file for geneus.
+geneus_DIR:PATH=/opt/ros/melodic/share/geneus/cmake
+
+//The directory containing a CMake configuration file for genlisp.
+genlisp_DIR:PATH=/opt/ros/melodic/share/genlisp/cmake
+
+//The directory containing a CMake configuration file for genmsg.
+genmsg_DIR:PATH=/opt/ros/melodic/share/genmsg/cmake
+
+//The directory containing a CMake configuration file for gennodejs.
+gennodejs_DIR:PATH=/opt/ros/melodic/share/gennodejs/cmake
+
+//The directory containing a CMake configuration file for genpy.
+genpy_DIR:PATH=/opt/ros/melodic/share/genpy/cmake
+
+//The directory containing a CMake configuration file for geometric_shapes.
+geometric_shapes_DIR:PATH=/opt/ros/melodic/share/geometric_shapes/cmake
+
+//The directory containing a CMake configuration file for geometry_msgs.
+geometry_msgs_DIR:PATH=/opt/ros/melodic/share/geometry_msgs/cmake
 
 //Value Computed by CMake
 gmock_BINARY_DIR:STATIC=/home/goksel/GitHub/IntroToRobotics/myrobotws/build/gtest/googlemock
@@ -319,6 +358,9 @@ googletest-distribution_BINARY_DIR:STATIC=/home/goksel/GitHub/IntroToRobotics/my
 
 //Value Computed by CMake
 googletest-distribution_SOURCE_DIR:STATIC=/usr/src/googletest
+
+//The directory containing a CMake configuration file for graph_msgs.
+graph_msgs_DIR:PATH=/opt/ros/melodic/share/graph_msgs/cmake
 
 //Value Computed by CMake
 gtest_BINARY_DIR:STATIC=/home/goksel/GitHub/IntroToRobotics/myrobotws/build/gtest/googlemock/gtest
@@ -348,20 +390,136 @@ gtest_hide_internal_symbols:BOOL=OFF
 //Dependencies for the target
 gtest_main_LIB_DEPENDS:STATIC=general;-lpthread;general;gtest;
 
+//The directory containing a CMake configuration file for image_transport.
+image_transport_DIR:PATH=/opt/ros/melodic/share/image_transport/cmake
+
+//The directory containing a CMake configuration file for interactive_markers.
+interactive_markers_DIR:PATH=/opt/ros/melodic/share/interactive_markers/cmake
+
+//The directory containing a CMake configuration file for joint_state_publisher.
+joint_state_publisher_DIR:PATH=/opt/ros/melodic/share/joint_state_publisher/cmake
+
+//The directory containing a CMake configuration file for kdl_conversions.
+kdl_conversions_DIR:PATH=/opt/ros/melodic/share/kdl_conversions/cmake
+
+//The directory containing a CMake configuration file for kdl_parser.
+kdl_parser_DIR:PATH=/opt/ros/melodic/share/kdl_parser/cmake
+
+//The directory containing a CMake configuration file for laser_geometry.
+laser_geometry_DIR:PATH=/opt/ros/melodic/share/laser_geometry/cmake
+
 //Path to a library.
 lib:FILEPATH=/opt/ros/melodic/lib/libxmlrpcpp.so
+
+//The directory containing a CMake configuration file for map_msgs.
+map_msgs_DIR:PATH=/opt/ros/melodic/share/map_msgs/cmake
+
+//The directory containing a CMake configuration file for message_filters.
+message_filters_DIR:PATH=/opt/ros/melodic/share/message_filters/cmake
+
+//The directory containing a CMake configuration file for message_generation.
+message_generation_DIR:PATH=/opt/ros/melodic/share/message_generation/cmake
 
 //The directory containing a CMake configuration file for message_runtime.
 message_runtime_DIR:PATH=/opt/ros/melodic/share/message_runtime/cmake
 
-//Value Computed by CMake
-my_pr_robot_BINARY_DIR:STATIC=/home/goksel/GitHub/IntroToRobotics/myrobotws/build/my_pr_robot
+//The directory containing a CMake configuration file for moveit_core.
+moveit_core_DIR:PATH=/opt/ros/melodic/share/moveit_core/cmake
+
+//The directory containing a CMake configuration file for moveit_fake_controller_manager.
+moveit_fake_controller_manager_DIR:PATH=/opt/ros/melodic/share/moveit_fake_controller_manager/cmake
+
+//The directory containing a CMake configuration file for moveit_kinematics.
+moveit_kinematics_DIR:PATH=/opt/ros/melodic/share/moveit_kinematics/cmake
+
+//The directory containing a CMake configuration file for moveit_msgs.
+moveit_msgs_DIR:PATH=/opt/ros/melodic/share/moveit_msgs/cmake
+
+//The directory containing a CMake configuration file for moveit_planners_ompl.
+moveit_planners_ompl_DIR:PATH=/opt/ros/melodic/share/moveit_planners_ompl/cmake
+
+//The directory containing a CMake configuration file for moveit_ros_manipulation.
+moveit_ros_manipulation_DIR:PATH=/opt/ros/melodic/share/moveit_ros_manipulation/cmake
+
+//The directory containing a CMake configuration file for moveit_ros_move_group.
+moveit_ros_move_group_DIR:PATH=/opt/ros/melodic/share/moveit_ros_move_group/cmake
+
+//The directory containing a CMake configuration file for moveit_ros_occupancy_map_monitor.
+moveit_ros_occupancy_map_monitor_DIR:PATH=/opt/ros/melodic/share/moveit_ros_occupancy_map_monitor/cmake
+
+//The directory containing a CMake configuration file for moveit_ros_planning.
+moveit_ros_planning_DIR:PATH=/opt/ros/melodic/share/moveit_ros_planning/cmake
+
+//The directory containing a CMake configuration file for moveit_ros_planning_interface.
+moveit_ros_planning_interface_DIR:PATH=/opt/ros/melodic/share/moveit_ros_planning_interface/cmake
+
+//The directory containing a CMake configuration file for moveit_ros_robot_interaction.
+moveit_ros_robot_interaction_DIR:PATH=/opt/ros/melodic/share/moveit_ros_robot_interaction/cmake
+
+//The directory containing a CMake configuration file for moveit_ros_visualization.
+moveit_ros_visualization_DIR:PATH=/opt/ros/melodic/share/moveit_ros_visualization/cmake
+
+//The directory containing a CMake configuration file for moveit_ros_warehouse.
+moveit_ros_warehouse_DIR:PATH=/opt/ros/melodic/share/moveit_ros_warehouse/cmake
+
+//The directory containing a CMake configuration file for moveit_setup_assistant.
+moveit_setup_assistant_DIR:PATH=/opt/ros/melodic/share/moveit_setup_assistant/cmake
+
+//The directory containing a CMake configuration file for moveit_visual_tools.
+moveit_visual_tools_DIR:PATH=/opt/ros/melodic/share/moveit_visual_tools/cmake
 
 //Value Computed by CMake
-my_pr_robot_SOURCE_DIR:STATIC=/home/goksel/GitHub/IntroToRobotics/myrobotws/src/my_pr_robot
+moverobot_BINARY_DIR:STATIC=/home/goksel/GitHub/IntroToRobotics/myrobotws/build/moverobot
+
+//Dependencies for target
+moverobot_LIB_DEPENDS:STATIC=
+
+//Value Computed by CMake
+moverobot_SOURCE_DIR:STATIC=/home/goksel/GitHub/IntroToRobotics/myrobotws/src/moverobot
+
+//Value Computed by CMake
+moverobotwithobject_BINARY_DIR:STATIC=/home/goksel/GitHub/IntroToRobotics/myrobotws/build/moverobotwithobject
+
+//Dependencies for target
+moverobotwithobject_LIB_DEPENDS:STATIC=
+
+//Value Computed by CMake
+moverobotwithobject_SOURCE_DIR:STATIC=/home/goksel/GitHub/IntroToRobotics/myrobotws/src/moverobotwithobject
+
+//Value Computed by CMake
+my_pr_robot_BINARY_DIR:STATIC=/home/goksel/GitHub/IntroToRobotics/myrobotws/build/robot_description
+
+//Value Computed by CMake
+my_pr_robot_SOURCE_DIR:STATIC=/home/goksel/GitHub/IntroToRobotics/myrobotws/src/robot_description
+
+//The directory containing a CMake configuration file for nav_msgs.
+nav_msgs_DIR:PATH=/opt/ros/melodic/share/nav_msgs/cmake
+
+//The directory containing a CMake configuration file for object_recognition_msgs.
+object_recognition_msgs_DIR:PATH=/opt/ros/melodic/share/object_recognition_msgs/cmake
+
+//The directory containing a CMake configuration file for octomap_msgs.
+octomap_msgs_DIR:PATH=/opt/ros/melodic/share/octomap_msgs/cmake
 
 //The directory containing a CMake configuration file for pluginlib.
 pluginlib_DIR:PATH=/opt/ros/melodic/share/pluginlib/cmake
+
+//The directory containing a CMake configuration file for random_numbers.
+random_numbers_DIR:PATH=/opt/ros/melodic/share/random_numbers/cmake
+
+//The directory containing a CMake configuration file for resource_retriever.
+resource_retriever_DIR:PATH=/opt/ros/melodic/share/resource_retriever/cmake
+
+//Value Computed by CMake
+robot_description_BINARY_DIR:STATIC=/home/goksel/GitHub/IntroToRobotics/myrobotws/build/robot_description
+
+robot_description_DIR:PATH=
+
+//Value Computed by CMake
+robot_description_SOURCE_DIR:STATIC=/home/goksel/GitHub/IntroToRobotics/myrobotws/src/robot_description
+
+//The directory containing a CMake configuration file for robot_state_publisher.
+robot_state_publisher_DIR:PATH=/opt/ros/melodic/share/robot_state_publisher/cmake
 
 //The directory containing a CMake configuration file for rosconsole.
 rosconsole_DIR:PATH=/opt/ros/melodic/share/rosconsole/cmake
@@ -378,6 +536,9 @@ roscpp_serialization_DIR:PATH=/opt/ros/melodic/share/roscpp_serialization/cmake
 //The directory containing a CMake configuration file for roscpp_traits.
 roscpp_traits_DIR:PATH=/opt/ros/melodic/share/roscpp_traits/cmake
 
+//The directory containing a CMake configuration file for rosgraph.
+rosgraph_DIR:PATH=/opt/ros/melodic/share/rosgraph/cmake
+
 //The directory containing a CMake configuration file for rosgraph_msgs.
 rosgraph_msgs_DIR:PATH=/opt/ros/melodic/share/rosgraph_msgs/cmake
 
@@ -387,14 +548,74 @@ roslib_DIR:PATH=/opt/ros/melodic/share/roslib/cmake
 //The directory containing a CMake configuration file for rospack.
 rospack_DIR:PATH=/opt/ros/melodic/share/rospack/cmake
 
+//The directory containing a CMake configuration file for rospy.
+rospy_DIR:PATH=/opt/ros/melodic/share/rospy/cmake
+
 //The directory containing a CMake configuration file for rostime.
 rostime_DIR:PATH=/opt/ros/melodic/share/rostime/cmake
+
+//The directory containing a CMake configuration file for rviz.
+rviz_DIR:PATH=/opt/ros/melodic/share/rviz/cmake
+
+//The directory containing a CMake configuration file for rviz_visual_tools.
+rviz_visual_tools_DIR:PATH=/opt/ros/melodic/share/rviz_visual_tools/cmake
+
+//The directory containing a CMake configuration file for sensor_msgs.
+sensor_msgs_DIR:PATH=/opt/ros/melodic/share/sensor_msgs/cmake
+
+//The directory containing a CMake configuration file for shape_msgs.
+shape_msgs_DIR:PATH=/opt/ros/melodic/share/shape_msgs/cmake
+
+//The directory containing a CMake configuration file for srdfdom.
+srdfdom_DIR:PATH=/opt/ros/melodic/share/srdfdom/cmake
 
 //The directory containing a CMake configuration file for std_msgs.
 std_msgs_DIR:PATH=/opt/ros/melodic/share/std_msgs/cmake
 
+//The directory containing a CMake configuration file for std_srvs.
+std_srvs_DIR:PATH=/opt/ros/melodic/share/std_srvs/cmake
+
+//The directory containing a CMake configuration file for tf2.
+tf2_DIR:PATH=/opt/ros/melodic/share/tf2/cmake
+
+//The directory containing a CMake configuration file for tf2_eigen.
+tf2_eigen_DIR:PATH=/opt/ros/melodic/share/tf2_eigen/cmake
+
+//The directory containing a CMake configuration file for tf2_geometry_msgs.
+tf2_geometry_msgs_DIR:PATH=/opt/ros/melodic/share/tf2_geometry_msgs/cmake
+
+//The directory containing a CMake configuration file for tf2_kdl.
+tf2_kdl_DIR:PATH=/opt/ros/melodic/share/tf2_kdl/cmake
+
+//The directory containing a CMake configuration file for tf2_msgs.
+tf2_msgs_DIR:PATH=/opt/ros/melodic/share/tf2_msgs/cmake
+
+//The directory containing a CMake configuration file for tf2_py.
+tf2_py_DIR:PATH=/opt/ros/melodic/share/tf2_py/cmake
+
+//The directory containing a CMake configuration file for tf2_ros.
+tf2_ros_DIR:PATH=/opt/ros/melodic/share/tf2_ros/cmake
+
+//The directory containing a CMake configuration file for tf.
+tf_DIR:PATH=/opt/ros/melodic/share/tf/cmake
+
+//The directory containing a CMake configuration file for tf_conversions.
+tf_conversions_DIR:PATH=/opt/ros/melodic/share/tf_conversions/cmake
+
+//The directory containing a CMake configuration file for trajectory_msgs.
+trajectory_msgs_DIR:PATH=/opt/ros/melodic/share/trajectory_msgs/cmake
+
 //The directory containing a CMake configuration file for urdf.
 urdf_DIR:PATH=/opt/ros/melodic/share/urdf/cmake
+
+//The directory containing a CMake configuration file for visualization_msgs.
+visualization_msgs_DIR:PATH=/opt/ros/melodic/share/visualization_msgs/cmake
+
+//The directory containing a CMake configuration file for warehouse_ros.
+warehouse_ros_DIR:PATH=/opt/ros/melodic/share/warehouse_ros/cmake
+
+//The directory containing a CMake configuration file for xacro.
+xacro_DIR:PATH=/opt/ros/melodic/share/xacro/cmake
 
 //The directory containing a CMake configuration file for xmlrpcpp.
 xmlrpcpp_DIR:PATH=/opt/ros/melodic/share/xmlrpcpp/cmake
@@ -509,7 +730,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=6
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=8
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP
