@@ -139,11 +139,11 @@ int main(int argc, char** argv)
     joint_group_positions[0] = 4.0;  // meters, joints position goal
     joint_group_positions[1] = 3.14; // radians, joint's degree goal
     move_group.setJointValueTarget(joint_group_positions);
-    move_group.move(); //for real movement of arm
+    move_group.move(); //for real movement of robot
     joint_group_positions[0] = 0.0;  // it is in loop so i reinitialized it in 0,-3.14rad
     joint_group_positions[1] = 0.0;
     move_group.setJointValueTarget(joint_group_positions);
-    move_group.move(); //for real movement of arm
+    move_group.move(); //for real movement of robot
 
     bool success = (move_group.plan(my_plan) == moveit::planning_interface::MoveItErrorCode::SUCCESS); // if plan success
     ROS_INFO_NAMED("tutorial", "Visualizing plan 2 (joint space goal) %s", success ? "" : "FAILED");

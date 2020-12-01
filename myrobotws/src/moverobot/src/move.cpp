@@ -22,7 +22,7 @@ int main(int argc, char** argv)
     // MoveIt operates on sets of joints called "planning groups" and stores them in an object called
     // the `JointModelGroup`. Throughout MoveIt the terms "planning group" and "joint model group"
     // are used interchangably.
-    static const std::string PLANNING_GROUP = "pr_robot";
+    static const std::string PLANNING_GROUP = "pr_robot"; // my planning group
 
     // The :move_group_interface:`MoveGroupInterface` class can be easily
     // setup using just the name of the planning group you would like to control and plan for.
@@ -90,11 +90,11 @@ int main(int argc, char** argv)
     joint_group_positions[0] = 4.0;  // meters, prismatic joint's goal
     joint_group_positions[1] = 3.14; // radian, revolute joint's goal
     move_group.setJointValueTarget(joint_group_positions);
-    move_group.move();//for real movement of arm
+    move_group.move();//for real movement of robot
     joint_group_positions[0] = 0.0;  // it should be re initialized
     joint_group_positions[1] = -3.14;
     move_group.setJointValueTarget(joint_group_positions);
-    move_group.move();//for real movement of arm
+    move_group.move();//for real movement of robot
     // Visualize the plan in RViz
 
     bool success = (move_group.plan(my_plan) == moveit::planning_interface::MoveItErrorCode::SUCCESS);
