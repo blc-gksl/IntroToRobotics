@@ -35,6 +35,14 @@
 /home/goksel/GitHub/IntroToRobotics/myrobotws/build/gtest/googlemock/gtest/CMakeFiles/list_install_components.dir
 /home/goksel/GitHub/IntroToRobotics/myrobotws/build/gtest/googlemock/gtest/CMakeFiles/gtest.dir
 /home/goksel/GitHub/IntroToRobotics/myrobotws/build/gtest/googlemock/gtest/CMakeFiles/rebuild_cache.dir
+/home/goksel/GitHub/IntroToRobotics/myrobotws/build/config_files/CMakeFiles/install/strip.dir
+/home/goksel/GitHub/IntroToRobotics/myrobotws/build/config_files/CMakeFiles/install/local.dir
+/home/goksel/GitHub/IntroToRobotics/myrobotws/build/config_files/CMakeFiles/test.dir
+/home/goksel/GitHub/IntroToRobotics/myrobotws/build/config_files/CMakeFiles/list_install_components.dir
+/home/goksel/GitHub/IntroToRobotics/myrobotws/build/config_files/CMakeFiles/edit_cache.dir
+/home/goksel/GitHub/IntroToRobotics/myrobotws/build/config_files/CMakeFiles/_catkin_empty_exported_target.dir
+/home/goksel/GitHub/IntroToRobotics/myrobotws/build/config_files/CMakeFiles/rebuild_cache.dir
+/home/goksel/GitHub/IntroToRobotics/myrobotws/build/config_files/CMakeFiles/install.dir
 /home/goksel/GitHub/IntroToRobotics/myrobotws/build/my_pr_robot/CMakeFiles/install/strip.dir
 /home/goksel/GitHub/IntroToRobotics/myrobotws/build/my_pr_robot/CMakeFiles/install/local.dir
 /home/goksel/GitHub/IntroToRobotics/myrobotws/build/my_pr_robot/CMakeFiles/rebuild_cache.dir

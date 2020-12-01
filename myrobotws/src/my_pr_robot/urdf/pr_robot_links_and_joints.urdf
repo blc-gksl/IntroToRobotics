@@ -4,19 +4,23 @@
 <!-- |    EDITING THIS FILE BY HAND IS NOT RECOMMENDED                                 | -->
 <!-- =================================================================================== -->
 <robot name="pr_robot">
+    <!-- END - Include -->
     <link name="base_link">
-        <visual>
-            <origin rpy="0 0 0" xyz="0 0 2.5" />
-            <geometry>
-                <cylinder length="5" radius="1.5" />
-            </geometry>
-        </visual>
         <collision>
             <origin rpy="0 0 0" xyz="0 0 2.5" />
             <geometry>
                 <cylinder length="5" radius="1.5" />
             </geometry>
         </collision>
+        <visual>
+            <origin rpy="0 0 0" xyz="0 0 2.5" />
+            <geometry>
+                <cylinder length="5" radius="1.5" />
+            </geometry>
+        </visual>
+        <material name="red">
+            <color rgba="0.8 0.0 0.0 1.0" />
+        </material>
         
 <inertial>
             <mass value="0.1" />
@@ -25,28 +29,28 @@
 
     </link>
     <joint name="joint1_base_link_to_link1" type="prismatic">
+        <origin rpy="0 0 0" xyz="0 0 1" />
         <parent link="base_link" />
         <child link="link1" />
         <axis xyz="0 0 1" />
-        <origin rpy="0 0 0" xyz="0 0 1" />
-        <limit effort="1000.0" lower="0" upper="4" velocity="0.5" />
+        <limit effort="1000" lower="0" upper="4.0" velocity="0.5" />
     </joint>
     <link name="link1">
-        <visual>
-            <origin rpy="0 0 0" xyz="0 0 2.5" />
-            <geometry>
-                <cylinder length="5" radius="1" />
-            </geometry>
-            <material name="green">
-                <color rgba="0.0 1.0 0.0 1.0" />
-            </material>
-        </visual>
         <collision>
             <origin rpy="0 0 0" xyz="0 0 2.5" />
             <geometry>
                 <cylinder length="5" radius="1" />
             </geometry>
         </collision>
+        <visual>
+            <origin rpy="0 0 0" xyz="0 0 2.5" />
+            <geometry>
+                <cylinder length="5" radius="1" />
+            </geometry>
+        </visual>
+        <material name="green">
+            <color rgba="0.0 0.8 0.0 1.0" />
+        </material>
         
 <inertial>
             <mass value="0.1" />
@@ -55,11 +59,11 @@
 
     </link>
     <joint name="joint2_link1_to_link2" type="revolute">
+        <origin rpy="0 0 0" xyz="0 0 0" />
         <parent link="link1" />
         <child link="link2" />
         <axis xyz="0 0 1" />
-        <origin rpy="0 0 0" xyz="0 0 0" />
-        <limit effort="1000.0" lower="-3.14" upper="3.14" velocity="1" />
+        <limit effort="1000" lower="-3.14" upper="3.14" velocity="1.0" />
     </joint>
     <link name="link2">
         <visual>
@@ -74,6 +78,9 @@
                 <box size="5 1 1" />
             </geometry>
         </collision>
+        <material name="red">
+            <color rgba="0.8 0.0 0.0 1.0" />
+        </material>
         
 <inertial>
             <mass value="0.1" />
@@ -85,6 +92,8 @@
         <origin rpy="0 0 0" xyz="0 0 0" />
         <parent link="link2" />
         <child link="hand" />
+        <axis xyz="0 0 0" />
+        <limit effort="0" lower="0" upper="0" velocity="0" />
     </joint>
     <link name="hand">
         <visual>
@@ -92,9 +101,6 @@
             <geometry>
                 <box size="1 1 1" />
             </geometry>
-            <material name="green">
-                <color rgba="0.0 1.0 0.0 1.0" />
-            </material>
         </visual>
         <collision>
             <origin rpy="0 0 0" xyz="5.5 0 5.5" />
@@ -102,6 +108,9 @@
                 <box size="1 1 1" />
             </geometry>
         </collision>
+        <material name="green">
+            <color rgba="0.0 0.8 0.0 1.0" />
+        </material>
         
 <inertial>
             <mass value="0.1" />

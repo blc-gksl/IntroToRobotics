@@ -1,0 +1,8 @@
+prefix=/home/goksel/GitHub/IntroToRobotics/myrobotws/devel
+
+Name: config_files
+Description: Description of config_files
+Version: 0.3.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

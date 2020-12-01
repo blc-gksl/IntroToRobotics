@@ -131,6 +131,7 @@ endif()
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
   include("/home/goksel/GitHub/IntroToRobotics/myrobotws/build/gtest/cmake_install.cmake")
+  include("/home/goksel/GitHub/IntroToRobotics/myrobotws/build/config_files/cmake_install.cmake")
   include("/home/goksel/GitHub/IntroToRobotics/myrobotws/build/my_pr_robot/cmake_install.cmake")
 
 endif()

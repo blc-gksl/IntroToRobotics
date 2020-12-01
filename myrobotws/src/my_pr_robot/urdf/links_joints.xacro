@@ -1,0 +1,94 @@
+<?xml version = "1.0"?>
+<robot xmlns:xacro ="http://www.ros.org.wiki/xacro">
+
+  <xacro:macro name="my_joint" params="name type origin_rpy origin_xyz parent child axis_xyz limit_e limit_l limit_u limit_v">
+    <joint name="${name}" type="${type}">
+      <origin rpy="${origin_rpy}" xyz="${origin_xyz}" />
+      <parent link="${parent}" />
+      <child link="${child}" />
+      <axis xyz="${axis_xyz}" />
+      <limit effort="${limit_e}" lower="${limit_l}" upper="${limit_u}" velocity="${limit_v}" />
+    </joint>
+  </xacro:macro>
+
+  <xacro:macro name="my_box_link_red" params="name origin_rpy origin_xyz size">
+    <link name = "${name}">
+    <visual>
+      <origin rpy = "${origin_rpy}" xyz = "${origin_xyz}"/>
+      <geometry>
+        <box size = "${size}"/>
+      </geometry>
+    </visual>
+    <collision>
+      <origin rpy = "${origin_rpy}" xyz = "${origin_xyz}"/>
+      <geometry>
+        <box size = "${size}"/>
+      </geometry>
+    </collision>
+      <material name="red">
+        <color rgba="0.8 0.0 0.0 1.0"/>
+      </material>
+    </link>
+  </xacro:macro>
+
+  <xacro:macro name="my_box_link_green" params="name origin_rpy origin_xyz size">
+    <link name = "${name}">
+    <visual>
+      <origin rpy = "${origin_rpy}" xyz = "${origin_xyz}"/>
+      <geometry>
+        <box size = "${size}"/>
+      </geometry>
+    </visual>
+    <collision>
+      <origin rpy = "${origin_rpy}" xyz = "${origin_xyz}"/>
+      <geometry>
+        <box size = "${size}"/>
+      </geometry>
+    </collision>
+      <material name="green">
+        <color rgba="0.0 0.8 0.0 1.0"/>
+      </material>
+    </link>
+  </xacro:macro>
+
+  <xacro:macro name="my_cylinder_link_red" params="name origin_rpy origin_xyz radius length">
+    <link name="${name}">
+      <collision>
+        <origin rpy="${origin_rpy}" xyz="${origin_xyz}" />
+        <geometry>
+          <cylinder radius="${radius}" length="${length}" />
+        </geometry>
+      </collision>
+      <visual>
+        <origin rpy="${origin_rpy}" xyz="${origin_xyz}" />
+        <geometry>
+          <cylinder radius="${radius}" length="${length}" />
+        </geometry>
+      </visual>
+      <material name="red">
+        <color rgba="0.8 0.0 0.0 1.0"/>
+      </material>
+    </link>
+  </xacro:macro>
+
+  <xacro:macro name="my_cylinder_link_green" params="name origin_rpy origin_xyz radius length">
+    <link name="${name}">
+      <collision>
+        <origin rpy="${origin_rpy}" xyz="${origin_xyz}" />
+        <geometry>
+          <cylinder radius="${radius}" length="${length}" />
+        </geometry>
+      </collision>
+      <visual>
+        <origin rpy="${origin_rpy}" xyz="${origin_xyz}" />
+        <geometry>
+          <cylinder radius="${radius}" length="${length}" />
+        </geometry>
+      </visual>
+      <material name="green">
+        <color rgba="0.0 0.8 0.0 1.0"/>
+      </material>
+    </link>
+  </xacro:macro>
+
+</robot>
