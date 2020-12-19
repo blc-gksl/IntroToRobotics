@@ -22,23 +22,23 @@
 
     <my_joint name = "joint2_link1_to_link2"
               type = "revolute"
-              origin_rpy = "0 0 0" origin_xyz = "0 0 0"
+              origin_rpy = "0 0 0" origin_xyz = "0 0 5.35"
               parent = "link1" child = "link2"
               axis_xyz = "0 0 1"
               limit_e = "1000" limit_l = "-3.14" limit_u = "3.14" limit_v = "1.0"/>
 
     <my_box_link_red name = "link2"
-                 origin_rpy = "0 0 0" origin_xyz = "2 0 5.35"
+                 origin_rpy = "0 0 0" origin_xyz = "2 0 0"
                  size = "4 0.7 0.7"/>
 
     <my_joint name = "joint3_link2_to_hand"
               type = "fixed"
-              origin_rpy = "0 0 0" origin_xyz = "0 0 0"
+              origin_rpy = "0 0 0" origin_xyz = "4 0 0"
               parent = "link2" child = "hand"
               axis_xyz = "0 0 0"
               limit_e = "0" limit_l = "0" limit_u = "0" limit_v = "0"/>
 
     <my_box_link_green name = "hand"
-                 origin_rpy = "0 0 0" origin_xyz = "4.5 0 5.35"
+                 origin_rpy = "0 0 0" origin_xyz = "0.5 0 0"
                  size = "1 0.7 0.7"/>
 </robot>

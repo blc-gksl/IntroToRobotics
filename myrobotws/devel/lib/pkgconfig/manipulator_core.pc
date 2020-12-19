@@ -1,0 +1,8 @@
+prefix=/home/goksel/GitHub/IntroToRobotics/myrobotws/devel
+
+Name: manipulator_core
+Description: Description of manipulator_core
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

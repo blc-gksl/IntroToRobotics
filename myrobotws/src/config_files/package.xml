@@ -5,8 +5,8 @@
   <description>
      An automatically generated package with all the configuration and launch files for using the pr_robot with the MoveIt! Motion Planning Framework
   </description>
-  <author email="goksel.bilicii@gmail.com">Göksel Bilici</author>
-  <maintainer email="goksel.bilicii@gmail.com">Göksel Bilici</maintainer>
+  <author email="goksel.bilici@boun.edu.tr">Goksel-Bilici</author>
+  <maintainer email="goksel.bilici@boun.edu.tr">Goksel-Bilici</maintainer>
 
   <license>BSD</license>
 

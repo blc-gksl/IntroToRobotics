@@ -132,6 +132,7 @@ if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
   include("/home/goksel/GitHub/IntroToRobotics/myrobotws/build/gtest/cmake_install.cmake")
   include("/home/goksel/GitHub/IntroToRobotics/myrobotws/build/config_files/cmake_install.cmake")
+  include("/home/goksel/GitHub/IntroToRobotics/myrobotws/build/manipulator_core/cmake_install.cmake")
   include("/home/goksel/GitHub/IntroToRobotics/myrobotws/build/moverobot/cmake_install.cmake")
   include("/home/goksel/GitHub/IntroToRobotics/myrobotws/build/moverobotwithobject/cmake_install.cmake")
   include("/home/goksel/GitHub/IntroToRobotics/myrobotws/build/robot_description/cmake_install.cmake")

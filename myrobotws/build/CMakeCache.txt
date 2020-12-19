@@ -411,6 +411,12 @@ laser_geometry_DIR:PATH=/opt/ros/melodic/share/laser_geometry/cmake
 //Path to a library.
 lib:FILEPATH=/opt/ros/melodic/lib/libxmlrpcpp.so
 
+//Value Computed by CMake
+manipulator_core_BINARY_DIR:STATIC=/home/goksel/GitHub/IntroToRobotics/myrobotws/build/manipulator_core
+
+//Value Computed by CMake
+manipulator_core_SOURCE_DIR:STATIC=/home/goksel/GitHub/IntroToRobotics/myrobotws/src/manipulator_core
+
 //The directory containing a CMake configuration file for map_msgs.
 map_msgs_DIR:PATH=/opt/ros/melodic/share/map_msgs/cmake
 
@@ -730,7 +736,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=8
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=9
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP
