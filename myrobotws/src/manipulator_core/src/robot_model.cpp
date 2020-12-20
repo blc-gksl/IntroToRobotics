@@ -156,45 +156,38 @@ int main(int argc, char** argv)
   // "link03" which is the most distal link in the
   // "group_1" group of the robot.
 
+//respectively
 
  // part b 1.1
-	// set the joint states to set 1: d1 = 2.3, theta2 = -2
-	joint_values[0] = 1.3;
-	joint_values[1] = -1;
- 	kinematic_state->setJointGroupPositions(joint_model_group, joint_values);
-
-	ROS_INFO("First Set of Joints :  \n");
-	ROS_INFO("d1	: %s	: %f", joint_names[0].c_str(), joint_values[0]);
-	ROS_INFO("theta 2	: %s	: %f", joint_names[1].c_str(), joint_values[1]);
-
-	// get the kinematic response of the joint set 1.
-
-  const Eigen::Isometry3d& end_effector_state_1 = kinematic_state->getGlobalLinkTransform("hand");
-
+	// set the joint states to set 1: d1 = 1.3, theta2 = -1
+  // get the kinematic response of the joint set 1.
   /* Print end-effector pose. Remember that this is in the model frame */
-  ROS_INFO_STREAM("Translation: \n" << end_effector_state_1.translation() << "\n");
-  ROS_INFO_STREAM("Rotation: \n" << end_effector_state_1.rotation() << "\n");
-
-
- // part b 2.1
+  // part b 2.1
 	// finding the origin of the F2 represented in F0. For set 1.
-	ROS_INFO("FOR SET 1\nRepresenting The Origin of Frame 2 in the Frame 0:");
-	ROS_INFO_STREAM("\n" << end_effector_state_1.translation() << "\n");
-
  // part b 3.1
-
   // Inverse Kinematics
   // ^^^^^^^^^^^^^^^^^^
-  // We can now solve inverse kinematics (IK) for the PR Robot.
+  // We can now solve inverse kinematics (IK) for t he PR Robot.
   // To solve IK, we will need the following:
   //
   //  * The desired pose of the end-effector (by default, this is the last link in the "group_1" chain):
   //    end_effector_state that we computed in the step above.
   //  * The timeout: 0.1 s
+    // Now, we can print out the IK solution (if found):
+	joint_values[0] = 1.3;
+	joint_values[1] = -1;
+ 	kinematic_state->setJointGroupPositions(joint_model_group, joint_values);
+	ROS_INFO("First Set of Joints :  \n");
+	ROS_INFO("d1	: %s	: %f", joint_names[0].c_str(), joint_values[0]);
+	ROS_INFO("theta 2	: %s	: %f", joint_names[1].c_str(), joint_values[1]);
+  const Eigen::Isometry3d& end_effector_state_1 = kinematic_state->getGlobalLinkTransform("hand");
+  ROS_INFO_STREAM("Translation: \n" << end_effector_state_1.translation() << "\n");
+  ROS_INFO_STREAM("Rotation: \n" << end_effector_state_1.rotation() << "\n");
+	ROS_INFO("FOR SET 1\nRepresenting The Origin of Frame 2 in the Frame 0:");
+	ROS_INFO_STREAM("\n" << end_effector_state_1.translation() << "\n");
   double timeout = 0.1;
   bool found_ik = kinematic_state->setFromIK(joint_model_group, end_effector_state_1, timeout);
 
-  // Now, we can print out the IK solution (if found):
   if (found_ik)
   {
     kinematic_state->copyJointGroupPositions(joint_model_group, joint_values);
@@ -210,12 +203,12 @@ int main(int argc, char** argv)
 
 
  // part b 1.2
-	// set the joint states to set 2: d1 = 1.5, theta2 = 3.6
+	// set the joint states to set 2: d1 = 3.5, theta2 = 3.1
 	joint_values[0] = 3.5;
 	joint_values[1] = 3.1;
  	kinematic_state->setJointGroupPositions(joint_model_group, joint_values);
 
-	ROS_INFO("Second Set of Joints :  \n");
+	ROS_INFO("\n\n\n\n\n\nSecond Set of Joints :  \n");
 	ROS_INFO("d1	: %s	: %f", joint_names[0].c_str(), joint_values[0]);
 	ROS_INFO("theta 2	: %s	: %f", joint_names[1].c_str(), joint_values[1]);
 
@@ -241,7 +234,7 @@ int main(int argc, char** argv)
     kinematic_state->copyJointGroupPositions(joint_model_group, joint_values);
     for (std::size_t i = 0; i < joint_names.size(); ++i)
     {
-      ROS_INFO("Joint %s: %f", joint_names[i].c_str(), joint_values[i]);
+      ROS_INFO("Joint %s: %f", joint_names[i].c_str(), joint_values[i], "\n");
     }
   }
   else
@@ -249,6 +242,7 @@ int main(int argc, char** argv)
     ROS_INFO("Did not find IK solution");
   }
 
+   ROS_INFO("IK finished \n\n");
 
       while (true)
     {
