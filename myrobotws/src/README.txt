@@ -19,5 +19,5 @@ on another terminal.
 To use manipulator_core directory and find kinematic and inverse kinematics run -->
     $roslaunch config_files demo.launch rviz_tutorial:=true
 on one therminal and run -->
-    rosrun manipulator_core robot_model_node
+    $rosrun manipulator_core robot_model_node
 on another termianl.
