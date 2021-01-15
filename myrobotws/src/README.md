@@ -41,7 +41,7 @@ on another termianl.
 
 # For Project 3:
 ## Part - 1
-To use manipulator_core directory and find kinematic and inverse kinematics run -->
+To use manipulator_core directory and find jacobian and move the pr_robot with a time parameter run -->
 
     $roslaunch config_files demo.launch rviz_tutorial:=true
 on one therminal and run -->
