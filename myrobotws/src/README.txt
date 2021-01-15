@@ -40,3 +40,6 @@ To use manipulator_core directory and find kinematic and inverse kinematics run 
 on one therminal and run -->
     $rosrun manipulator_core robot_model_node_pr3
 on another terminal.
+
+
+For any problem the github page can be visited [here](https://github.com/blc-gksl/IntroToRobotics/tree/master/myrobotws).
