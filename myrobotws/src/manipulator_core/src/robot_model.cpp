@@ -20,9 +20,9 @@
 
 int main(int argc, char** argv)
 {
-  //ros::init(argc, argv, "robot_model_and_robot_state_tutorial");
+  //ros::init(argc, argv, "robot_model_node");
 
-  ros::init(argc, argv, "robot_model_and_robot_state");
+  ros::init(argc, argv, "robot_model_node");
 
   ros::AsyncSpinner spinner(1);
   spinner.start();
@@ -300,18 +300,6 @@ int main(int argc, char** argv)
     // Visualize the plan in RViz
 
     }
-
-
-
-
-
-
-
-
-
-
-
-
 
   // Get the Jacobian
   // ^^^^^^^^^^^^^^^^

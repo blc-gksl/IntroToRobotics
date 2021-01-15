@@ -6,6 +6,6 @@ moveit_setup_assistant_config:
   SRDF:
     relative_path: config/pr_robot.srdf
   CONFIG:
-    author_name: Goksel-Bilici
-    author_email: goksel.bilici@boun.edu.tr
-    generated_timestamp: 1608361994
+    author_name: goksel
+    author_email: goksel.bilicii@gmail.com
+    generated_timestamp: 1610691769

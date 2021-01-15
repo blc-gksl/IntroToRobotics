@@ -480,6 +480,19 @@ moveit_ros_manipulation_gencfg/fast:
 .PHONY : moveit_ros_manipulation_gencfg/fast
 
 #=============================================================================
+# Target rules for targets named robot_model_node_pr3
+
+# Build rule for target.
+robot_model_node_pr3: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 robot_model_node_pr3
+.PHONY : robot_model_node_pr3
+
+# fast build rule for target.
+robot_model_node_pr3/fast:
+	$(MAKE) -f manipulator_core/CMakeFiles/robot_model_node_pr3.dir/build.make manipulator_core/CMakeFiles/robot_model_node_pr3.dir/build
+.PHONY : robot_model_node_pr3/fast
+
+#=============================================================================
 # Target rules for targets named tf_generate_messages_lisp
 
 # Build rule for target.
@@ -1855,6 +1868,7 @@ help:
 	@echo "... rviz_generate_messages_eus"
 	@echo "... rviz_generate_messages_cpp"
 	@echo "... moveit_ros_manipulation_gencfg"
+	@echo "... robot_model_node_pr3"
 	@echo "... tf_generate_messages_lisp"
 	@echo "... moveit_planners_ompl_gencfg"
 	@echo "... std_srvs_generate_messages_py"

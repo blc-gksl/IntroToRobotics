@@ -156,7 +156,7 @@ include_directories(
 ## The recommended prefix ensures that target names across packages don't collide
 #add_executable(${PROJECT_NAME}_node src/robot_model.cpp)
 add_executable(robot_model_node src/robot_model.cpp)
-
+add_executable(robot_model_node_pr3 src/robot_model_pr3.cpp)
 ## Rename C++ executable without prefix
 ## The above recommended prefix causes long target names, the following renames the
 ## target back to the shorter version for ease of user use
@@ -172,6 +172,10 @@ add_executable(robot_model_node src/robot_model.cpp)
         robot_model_node
         ${catkin_LIBRARIES}
  )
+ target_link_libraries(
+        robot_model_node_pr3
+        ${catkin_LIBRARIES}
+)
 
 #############
 ## Install ##

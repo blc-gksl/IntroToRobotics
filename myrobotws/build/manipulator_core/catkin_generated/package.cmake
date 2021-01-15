@@ -1,6 +1,6 @@
 set(_CATKIN_CURRENT_PACKAGE "manipulator_core")
 set(manipulator_core_VERSION "0.0.0")
-set(manipulator_core_MAINTAINER "isil <isil@todo.todo>")
+set(manipulator_core_MAINTAINER "goksel <goksel.bilicii@gmail.com>")
 set(manipulator_core_PACKAGE_FORMAT "2")
 set(manipulator_core_BUILD_DEPENDS "roscpp" "rospy" "std_msgs")
 set(manipulator_core_BUILD_EXPORT_DEPENDS "roscpp" "rospy" "std_msgs")

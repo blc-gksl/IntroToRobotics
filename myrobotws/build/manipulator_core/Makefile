@@ -378,6 +378,21 @@ moveit_ros_manipulation_gencfg/fast:
 .PHONY : moveit_ros_manipulation_gencfg/fast
 
 # Convenience name for target.
+manipulator_core/CMakeFiles/robot_model_node_pr3.dir/rule:
+	cd /home/goksel/GitHub/IntroToRobotics/myrobotws/build && $(MAKE) -f CMakeFiles/Makefile2 manipulator_core/CMakeFiles/robot_model_node_pr3.dir/rule
+.PHONY : manipulator_core/CMakeFiles/robot_model_node_pr3.dir/rule
+
+# Convenience name for target.
+robot_model_node_pr3: manipulator_core/CMakeFiles/robot_model_node_pr3.dir/rule
+
+.PHONY : robot_model_node_pr3
+
+# fast build rule for target.
+robot_model_node_pr3/fast:
+	cd /home/goksel/GitHub/IntroToRobotics/myrobotws/build && $(MAKE) -f manipulator_core/CMakeFiles/robot_model_node_pr3.dir/build.make manipulator_core/CMakeFiles/robot_model_node_pr3.dir/build
+.PHONY : robot_model_node_pr3/fast
+
+# Convenience name for target.
 manipulator_core/CMakeFiles/tf_generate_messages_lisp.dir/rule:
 	cd /home/goksel/GitHub/IntroToRobotics/myrobotws/build && $(MAKE) -f CMakeFiles/Makefile2 manipulator_core/CMakeFiles/tf_generate_messages_lisp.dir/rule
 .PHONY : manipulator_core/CMakeFiles/tf_generate_messages_lisp.dir/rule
@@ -1859,6 +1874,33 @@ src/robot_model.cpp.s:
 	cd /home/goksel/GitHub/IntroToRobotics/myrobotws/build && $(MAKE) -f manipulator_core/CMakeFiles/robot_model_node.dir/build.make manipulator_core/CMakeFiles/robot_model_node.dir/src/robot_model.cpp.s
 .PHONY : src/robot_model.cpp.s
 
+src/robot_model_pr3.o: src/robot_model_pr3.cpp.o
+
+.PHONY : src/robot_model_pr3.o
+
+# target to build an object file
+src/robot_model_pr3.cpp.o:
+	cd /home/goksel/GitHub/IntroToRobotics/myrobotws/build && $(MAKE) -f manipulator_core/CMakeFiles/robot_model_node_pr3.dir/build.make manipulator_core/CMakeFiles/robot_model_node_pr3.dir/src/robot_model_pr3.cpp.o
+.PHONY : src/robot_model_pr3.cpp.o
+
+src/robot_model_pr3.i: src/robot_model_pr3.cpp.i
+
+.PHONY : src/robot_model_pr3.i
+
+# target to preprocess a source file
+src/robot_model_pr3.cpp.i:
+	cd /home/goksel/GitHub/IntroToRobotics/myrobotws/build && $(MAKE) -f manipulator_core/CMakeFiles/robot_model_node_pr3.dir/build.make manipulator_core/CMakeFiles/robot_model_node_pr3.dir/src/robot_model_pr3.cpp.i
+.PHONY : src/robot_model_pr3.cpp.i
+
+src/robot_model_pr3.s: src/robot_model_pr3.cpp.s
+
+.PHONY : src/robot_model_pr3.s
+
+# target to generate assembly for a file
+src/robot_model_pr3.cpp.s:
+	cd /home/goksel/GitHub/IntroToRobotics/myrobotws/build && $(MAKE) -f manipulator_core/CMakeFiles/robot_model_node_pr3.dir/build.make manipulator_core/CMakeFiles/robot_model_node_pr3.dir/src/robot_model_pr3.cpp.s
+.PHONY : src/robot_model_pr3.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -1884,6 +1926,7 @@ help:
 	@echo "... rviz_generate_messages_eus"
 	@echo "... rviz_generate_messages_cpp"
 	@echo "... moveit_ros_manipulation_gencfg"
+	@echo "... robot_model_node_pr3"
 	@echo "... tf_generate_messages_lisp"
 	@echo "... moveit_planners_ompl_gencfg"
 	@echo "... std_srvs_generate_messages_py"
@@ -1986,6 +2029,9 @@ help:
 	@echo "... src/robot_model.o"
 	@echo "... src/robot_model.i"
 	@echo "... src/robot_model.s"
+	@echo "... src/robot_model_pr3.o"
+	@echo "... src/robot_model_pr3.i"
+	@echo "... src/robot_model_pr3.s"
 .PHONY : help
 
 

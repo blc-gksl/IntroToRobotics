@@ -8,4 +8,4 @@ controller_list:
       []
 initial:  # Define initial robot poses.
   - group: pr_robot
-    pose: naturel_pose
+    pose: naturalpose

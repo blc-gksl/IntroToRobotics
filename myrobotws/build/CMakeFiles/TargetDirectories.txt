@@ -62,6 +62,7 @@
 /home/goksel/GitHub/IntroToRobotics/myrobotws/build/manipulator_core/CMakeFiles/rviz_generate_messages_eus.dir
 /home/goksel/GitHub/IntroToRobotics/myrobotws/build/manipulator_core/CMakeFiles/rviz_generate_messages_cpp.dir
 /home/goksel/GitHub/IntroToRobotics/myrobotws/build/manipulator_core/CMakeFiles/moveit_ros_manipulation_gencfg.dir
+/home/goksel/GitHub/IntroToRobotics/myrobotws/build/manipulator_core/CMakeFiles/robot_model_node_pr3.dir
 /home/goksel/GitHub/IntroToRobotics/myrobotws/build/manipulator_core/CMakeFiles/tf_generate_messages_lisp.dir
 /home/goksel/GitHub/IntroToRobotics/myrobotws/build/manipulator_core/CMakeFiles/moveit_planners_ompl_gencfg.dir
 /home/goksel/GitHub/IntroToRobotics/myrobotws/build/manipulator_core/CMakeFiles/std_srvs_generate_messages_py.dir
