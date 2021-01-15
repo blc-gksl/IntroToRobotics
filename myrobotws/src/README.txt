@@ -34,6 +34,7 @@ on another termianl.
 
 
 
+
 For Project 3:
 To use manipulator_core directory and find kinematic and inverse kinematics run -->
     $roslaunch config_files demo.launch rviz_tutorial:=true
