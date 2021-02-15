@@ -13,3 +13,7 @@ daha sonra main nodu çalıştırarak aracı hareket ettiriyoruz. Arac 0,0 nokta
 $ rosrun tgr_simulation main
 
 
+Eğer Error 2 adlı bir hata alırsanız ve bu src içindeki "libconsole_bridge.so.0.4BulletSoftBody" dosyası ile ilgili ise bu dosyayı aşağıdaki kod ile
+/usr/lib/x86_64-linux-gnu/'ya eklemeyi unutmayın:
+
+$sudo cp -a libconsole_bridge.so.0.4BulletSoftBody /usr/lib/x86_64-linux-gnu/
