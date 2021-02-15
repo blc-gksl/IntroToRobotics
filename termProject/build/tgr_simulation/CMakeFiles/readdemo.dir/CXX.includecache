@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/goksel/GitHub/IntroToRobotics/termProject/src/tgr_simulation/src/readdemo.cpp
+iostream
+-
+fstream
+-
+vector
+-
+math.h
+-
+algorithm
+-
+

@@ -1,0 +1,2 @@
+tgr_msgs:tgr_simulation
+-DCATKIN_DEVEL_PREFIX=/home/goksel/GitHub/IntroToRobotics/termProject/devel -DCMAKE_INSTALL_PREFIX=/home/goksel/GitHub/IntroToRobotics/termProject/install -G Unix Makefiles
